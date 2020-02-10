@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      initialRoute: '/home1',
+      initialRoute: '/home2',
       routes: {
         '/home1': (context) => Home1(),
         '/home2': (context) => Home2(),
