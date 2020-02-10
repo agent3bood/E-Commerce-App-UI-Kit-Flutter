@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/my_app_bar.dart';
-import 'teaser_row.dart';
+import '../../widgets/my_drawer.dart';
+import './teaser_row.dart';
 
 class Home1 extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -12,7 +13,7 @@ class Home1 extends StatelessWidget {
     return Scaffold(
       key: _scaffoldKey,
       appBar: MyAppBar(scaffoldKey: _scaffoldKey),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: Container(
         padding: EdgeInsets.symmetric(
           horizontal: 16,
