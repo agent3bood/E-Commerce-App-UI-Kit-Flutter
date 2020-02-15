@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:e_commerceappuikit/screens/home2/category_row.dart';
 
 import '../../widgets/my_app_bar.dart';
 import '../../widgets/my_drawer.dart';
+import './category_row.dart';
+import './teaser_row.dart';
 
 class Home2 extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -26,6 +27,18 @@ class Home2 extends StatelessWidget {
                 height: 30,
               ),
               CategoryRow(),
+              SizedBox(
+                height: 30,
+              ),
+              TeaserRow(
+                name: 'Featured',
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              TeaserRow(
+                name: 'Best selling',
+              ),
             ],
           ),
         ),
