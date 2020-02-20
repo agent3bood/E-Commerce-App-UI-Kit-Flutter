@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './screens/home1/home1.dart';
 import './screens/home2/home2.dart';
+import './screens/home2/categories.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home1': (context) => Home1(),
         '/home2': (context) => Home2(),
+        '/home2/categories': (context) => Categories(),
       },
     );
   }
