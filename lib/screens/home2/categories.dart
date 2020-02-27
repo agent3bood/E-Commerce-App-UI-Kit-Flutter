@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:e_commerceappuikit/screens/home2/basic_app_bar.dart';
 import 'package:flutter/src/rendering/sliver.dart';
 import 'package:flutter/src/rendering/sliver_grid.dart';
 
@@ -11,44 +12,7 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.black45,
-          ),
-        ),
-        actions: <Widget>[
-          Stack(
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.live_help,
-                  color: Colors.grey,
-                ),
-              ),
-              Positioned(
-                top: 10,
-                right: 10,
-                child: Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
+      appBar: BasicAppBar(),
       body: Container(
         padding: EdgeInsets.all(16),
         color: Colors.white,
